@@ -13,7 +13,9 @@ I am Guanqin ZHANG in School of [Computer Science and Engineering](https://www.u
   - What techniques can we employ to verify neural networks and improve the overall robustness of AI systems?
   - What best practices should developers and practitioners follow to ensure reliable and robust model development?
 
-I am fortunate to work under the supervision of Scientia Associate Professor [Yulei Sui](https://yuleisui.github.io/), whose renowned expertise in software security and program analysis significantly shapes my research direction. Additionally, I benefit from the valuable guidance of [Dr. Dilum Bandara](https://people.csiro.au/B/D/dilum-bandara) and [Dr. Shiping Chen](https://people.csiro.au/C/S/Shiping-Chen), both from Data61, [CSIRO](https://www.csiro.au/en/). Their extensive experience in AI, cybersecurity, and data science greatly enhances my approach to addressing complex challenges in AI verification and reliability. 
+I am fortunate to work under the supervision of Scientia Associate Professor [Yulei Sui](https://yuleisui.github.io/), whose renowned expertise in software security and program analysis ([SVF](https://github.com/SVF-tools/SVF)) significantly shapes my research direction. Additionally, I benefit from the valuable guidance of [Dr. Dilum Bandara](https://people.csiro.au/B/D/dilum-bandara) and [Dr. Shiping Chen](https://people.csiro.au/C/S/Shiping-Chen), both from Data61, [CSIRO](https://www.csiro.au/en/). Their extensive experience in AI, cybersecurity, and data science greatly enhances my approach to addressing complex challenges in AI verification and reliability. 
+
+
 
 <!-- A data-driven personal website
 ======
