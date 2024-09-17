@@ -25,7 +25,7 @@ author:
   name             : "Guanqin ZHANG"
   pronouns         : # example: "she/her"  
   bio              : "PhD Candidates"
-  location         : "Sydney Australia"
+  location         : "Sydney, Australia"
   employer         : "University of New South Wales"
   uri              : # URL
   email            : "guanqin.zhang@unsw.edu.au" 
@@ -213,7 +213,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   publications:
-    output: false
+    output: true
     permalink: /:collection/:path/
   portfolio:
     output: false
