@@ -8,7 +8,7 @@ date: 2022-01-01
 location: "Sydney, Australia"
 ---
 
-Contributor of [Teaching-Software-Verification](https://github.com/SVF-tools/Teaching-Software-Verification) an online open courses for <b>learning software verification</b> via [SVF](https://github.com/SVF-tools/SVF)
+Contributor of [Teaching-Software-Verification](https://github.com/SVF-tools/Teaching-Software-Verification) an online open courses for <b>learning software verification</b> via [SVF](https://github.com/SVF-tools/SVF).
 
 
 Goal of this subject

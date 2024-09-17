@@ -8,7 +8,7 @@ date: 2021-01-01
 location: "Sydney, Australia"
 ---
 
-Contributor of [Teaching-Software-Analysis](https://github.com/SVF-tools/Teaching-Software-Analysis) an online open courses for <b>learning software analysis</b> via [SVF](https://github.com/SVF-tools/SVF)
+Contributor of [Teaching-Software-Analysis](https://github.com/SVF-tools/Teaching-Software-Analysis) an online open courses for <b>learning software analysis</b> via [SVF](https://github.com/SVF-tools/SVF).
 
 
 Goal of this subject
