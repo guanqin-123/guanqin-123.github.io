@@ -7,7 +7,8 @@ redirect_from:
   - /about.html
 ---
 
-I am Guanqin ZHANG in School of [Computer Science and Engineering](https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering) at [University of New South Wales](https://www.unsw.edu.au/newsroom/news/2024/06/UNSW-Sydney-retains-Top-20-position-in-QS-World-University-Rankings#:~:text=The%20University%20has%20placed%2019th,20%20universities%20in%20the%20world.) and Data61, [CSIRO](https://www.csiro.au/en/). My research focuses on the critical intersection of software security, AI verification, and deep neural network (DNN) robustness. I am deeply passionate about harnessing the power of artificial intelligence while ensuring its reliability and safety. My work aims to develop methodologies and tools for verifying neural networks and improving the robustness of deep learning models. Key questions driving my research include:
+I am Guanqin ZHANG in School of [Computer Science and Engineering](https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering) at [University of New South Wales](https://www.unsw.edu.au/newsroom/news/2024/06/UNSW-Sydney-retains-Top-20-position-in-QS-World-University-Rankings#:~:text=The%20University%20has%20placed%2019th,20%20universities%20in%20the%20world.) and Data61, [CSIRO](https://www.csiro.au/en/). My research focuses on the critical intersection of **software security, AI verification, and deep neural network (DNN) robustness**.
+ My work aims to develop methodologies and tools for verifying neural networks and improving the robustness of deep learning models. Key questions driving my research include:
 
   - How can we quantify and enhance the reliability of deep learning model behaviors?
   - What techniques can we employ to verify neural networks and improve the overall robustness of AI systems?
