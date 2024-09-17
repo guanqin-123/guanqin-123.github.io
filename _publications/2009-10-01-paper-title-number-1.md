@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 # permalink: /publication/2009-10-01-paper-title-number-1
 # excerpt: 'Yulei Sui, Xiao Cheng, Guanqin Zhang and Haoyu Wang'
-date: 2020
+date: 2020-11-15
 venue: 'OOPSLA'
 slidesurl: '/files/oopsla20_talk.pdf'
 paperurl: '/files/oopsla20.pdf'
