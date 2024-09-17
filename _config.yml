@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Guanqin ZHANG@UNSW PAG"
+title                    : "Guanqin ZHANG@UNSW CSE"
 title_separator          : "-"
 name                     : &name "Guanqin ZHANG"
 description              : &description "personal description"
