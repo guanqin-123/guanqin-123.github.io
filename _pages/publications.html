@@ -12,65 +12,89 @@ author_profile: true
 {% include base_path %}
 
 <div class="publications-container">
-  <!-- Conference Papers Section -->
+  <!-- SECTION 1: Conference Papers Section -->
   {% assign conf_papers = site.publications | where: "category", "conference" | sort: "date" | reverse %}
-  {% if conf_papers.size > 0 %}
-    <div class="publication-section">
-      <h2>Conference Papers</h2>
-      <hr />
+  <div class="publication-section" id="conference-papers">
+    <h2>Conference Papers</h2>
+    <hr />
+    {% if conf_papers.size > 0 %}
       {% for post in conf_papers %}
         {% include archive-single.html %}
       {% endfor %}
-    </div>
-  {% endif %}
+    {% else %}
+      <p><em>No conference papers found.</em></p>
+    {% endif %}
+  </div>
   
-  <!-- Journal Papers Section -->
+  <!-- SECTION 2: Journal Papers Section -->
   {% assign journal_papers = site.publications | where: "category", "manuscripts" | sort: "date" | reverse %}
-  {% if journal_papers.size > 0 %}
-    <div class="publication-section">
-      <h2>Journal Papers</h2>
-      <hr />
+  <div class="publication-section" id="journal-papers">
+    <h2>Journal Papers</h2>
+    <hr />
+    {% if journal_papers.size > 0 %}
       {% for post in journal_papers %}
         {% include archive-single.html %}
       {% endfor %}
-    </div>
-  {% endif %}
+    {% else %}
+      <p><em>No journal papers found.</em></p>
+    {% endif %}
+  </div>
   
-  <!-- Other Categories -->
+  <!-- SECTION 3: Other Categories -->
   {% for category in site.publication_category %}
     {% if category[0] == "conference" or category[0] == "manuscripts" %}
       {% continue %}
     {% endif %}
     {% assign category_papers = site.publications | where: "category", category[0] | sort: "date" | reverse %}
-    {% if category_papers.size > 0 %}
-      <div class="publication-section">
-        <h2>{{ category[1].title }}</h2>
-        <hr />
+    <div class="publication-section" id="{{ category[0] }}-papers">
+      <h2>{{ category[1].title }}</h2>
+      <hr />
+      {% if category_papers.size > 0 %}
         {% for post in category_papers %}
           {% include archive-single.html %}
         {% endfor %}
-      </div>
-    {% endif %}
+      {% else %}
+        <p><em>No papers in this category.</em></p>
+      {% endif %}
+    </div>
   {% endfor %}
   
   <!-- If no categories are defined, show all publications -->
   {% if site.publication_category.size == 0 or site.publication_category == nil %}
-    {% for post in site.publications reversed %}
-      {% include archive-single.html %}
-    {% endfor %}
+    <div class="publication-section" id="all-papers">
+      <h2>Publications</h2>
+      <hr />
+      {% for post in site.publications reversed %}
+        {% include archive-single.html %}
+      {% endfor %}
+    </div>
   {% endif %}
 </div>
 
 <style>
   .publications-container {
     margin-top: 2em;
+    display: flex;
+    flex-direction: column;
   }
   .publication-section {
     margin-bottom: 3em;
+    width: 100%;
   }
   .publication-section h2 {
     margin-top: 1.5em;
     clear: both;
+  }
+  /* Explicit order to ensure conference papers come first */
+  #conference-papers {
+    order: 1;
+  }
+  #journal-papers {
+    order: 2;
+  }
+  /* All other categories come after */
+  [id$="-papers"]:not(#conference-papers):not(#journal-papers) {
+    order: 3;
   }
 </style>
 
