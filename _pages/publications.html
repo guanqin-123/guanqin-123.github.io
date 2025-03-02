@@ -11,7 +11,7 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
+<!-- New style rendering if publication categories are defined
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
@@ -27,6 +27,57 @@ author_profile: true
     {% endfor %}
   {% endfor %}
 {% else %}
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %} -->
+<!-- Modified style to show conference papers first, then manuscripts -->
+{% if site.publication_category %}
+  <!-- First show conference papers -->
+  {% assign title_shown = false %}
+  {% for post in site.publications reversed %}
+    {% if post.category != "conference" %}
+      {% continue %}
+    {% endif %}
+    {% unless title_shown %}
+      <h2>Conference Papers</h2><hr />
+      {% assign title_shown = true %}
+    {% endunless %}
+    {% include archive-single.html %}
+  {% endfor %}
+  
+  <!-- Then show manuscripts/journal papers -->
+  {% assign title_shown = false %}
+  {% for post in site.publications reversed %}
+    {% if post.category != "manuscripts" %}
+      {% continue %}
+    {% endif %}
+    {% unless title_shown %}
+      <h2>Journal Papers</h2><hr />
+      {% assign title_shown = true %}
+    {% endunless %}
+    {% include archive-single.html %}
+  {% endfor %}
+  
+  <!-- Show any other categories that might exist -->
+  {% for category in site.publication_category %}
+    {% if category[0] == "conference" or category[0] == "manuscripts" %}
+      {% continue %}
+    {% endif %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  <!-- Fallback to original style if no categories defined -->
   {% for post in site.publications reversed %}
     {% include archive-single.html %}
   {% endfor %}
