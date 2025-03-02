@@ -13,7 +13,7 @@ author_profile: true
 
 <div class="publications-container">
   <!-- SECTION 1: Conference Papers Section -->
-  {% assign conf_papers = site.publications | where: "category", "conference" | sort: "date" | reverse %}
+  {% assign conf_papers = site.publications | where: "category", "conferences" | sort: "date" | reverse %}
   <div class="publication-section" id="conference-papers">
     <h2>Conference Papers</h2>
     <hr />
@@ -42,7 +42,7 @@ author_profile: true
   
   <!-- SECTION 3: Other Categories -->
   {% for category in site.publication_category %}
-    {% if category[0] == "conference" or category[0] == "manuscripts" %}
+    {% if category[0] == "conferences" or category[0] == "manuscripts" %}
       {% continue %}
     {% endif %}
     {% assign category_papers = site.publications | where: "category", category[0] | sort: "date" | reverse %}
