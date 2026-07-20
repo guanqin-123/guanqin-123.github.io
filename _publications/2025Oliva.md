@@ -9,5 +9,5 @@ paperurl: 'https://drops.dagstuhl.de/storage/00lipics/lipics-vol333-ecoop2025/LI
 toolurl: 'https://drops.dagstuhl.de/entities/document/10.4230/DARTS.11.2.11'
 extendversion: 'https://arxiv.org/abs/2507.17453'
 code: 'https://github.com/DeepLearningVerification/Oliva'
-citation: <b>Guanqin Zhang</b>, Kota Fukuda, Zhenya Zhang, Dilum Bandara, Shiping Chen, Jianjun Zhao, Yulei Sui <b>ECOOP 2025</b>
+citation: <b>Guanqin Zhang</b>, Kota Fukuda, Zhenya Zhang, Dilum Bandara, Shiping Chen, Jianjun Zhao, Yulei Sui <b>ECOOP 2025</b> (CORE A)
 ---

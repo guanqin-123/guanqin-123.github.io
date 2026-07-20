@@ -5,5 +5,5 @@ category: conferences
 year: 2023
 slidesurl: ''
 paperurl: '/files/ICFEM2023.pdf'
-citation:  <b>Guanqin Zhang, ICFEM 2023</b>
+citation:  <b>Guanqin Zhang, ICFEM 2023</b> (CORE C)
 ---

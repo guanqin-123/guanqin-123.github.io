@@ -5,5 +5,5 @@ category: conferences
 authors:  <b>Guanqin Zhang</b>, Yulei Sui
 year: 2026
 paperurl: 'https://arxiv.org/abs/2606.25239'
-citation: <b>Guanqin Zhang</b>, Yulei Sui <b>ASE 2026</b>
+citation: <b>Guanqin Zhang</b>, Yulei Sui <b>ASE 2026</b> (CORE A*)
 ---

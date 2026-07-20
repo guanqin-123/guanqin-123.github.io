@@ -6,5 +6,5 @@ authors:  Kota Fukuda, <b>Guanqin Zhang</b>, Zhenya Zhang, Yulei Sui, Jianjun Zh
 year: 2025
 paperurl: '/files/date25.pdf'
 code: 'https://github.com/DeepLearningVerification/ABONN'
-citation: Kota Fukuda, <b>Guanqin Zhang</b>, Zhenya Zhang, Yulei Sui, Jianjun Zhao <b>Date 2025</b>
+citation: Kota Fukuda, <b>Guanqin Zhang</b>, Zhenya Zhang, Yulei Sui, Jianjun Zhao <b>Date 2025</b> (CORE B)
 ---
